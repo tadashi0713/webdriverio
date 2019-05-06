@@ -1,5 +1,7 @@
+/// <reference types="webdriverio"/>
+
 declare class WDIOReporter {
-    constructor(options?: any);
+    constructor(options?: WebdriverIO.Options);
 
     onRunnerStart(runner?: any): void;
     onBeforeCommand(payload?: any): void;
@@ -8,12 +10,12 @@ declare class WDIOReporter {
     onSuiteStart(params?: any): void;
     onHookStart(hook?: any): void;
     onHookEnd(hook?: any): void;
-    onTestStart(test?: any): void;
-    onTestPass(test?: any): void;
-    onTestFail(test?: any): void;
-    onTestSkip(test?: any): void;
-    onTestEnd(test?: any): void;
-    onSuiteEnd(suite?: any): void;
+    onTestStart(test?: WebdriverIO.Test): void;
+    onTestPass(test?: WebdriverIO.Test): void;
+    onTestFail(test?: WebdriverIO.Test): void;
+    onTestSkip(test?: WebdriverIO.Test): void;
+    onTestEnd(test?: WebdriverIO.Test): void;
+    onSuiteEnd(suite?: WebdriverIO.Suite): void;
     onRunnerEnd(runner?: any): void;
 
     write(content: string): any;

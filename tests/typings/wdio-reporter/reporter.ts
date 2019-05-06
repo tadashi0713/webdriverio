@@ -26,19 +26,24 @@ export default class CustomReporter extends WDIOReporter {
     onHookEnd() {
     }
 
-    onTestStart() {
+    onTestStart(test) {
+        this.write(`Test started ${test.currentTest}`)
     }
 
-    onTestPass() {
+    onTestPass(test) {
+        this.write(`Test passed ${test.currentTest}`)
     }
 
-    onTestFail() {
+    onTestFail(test) {
+        this.write(`Test failed ${test.currentTest}`)
     }
 
-    onTestSkip() {
+    onTestSkip(test) {
+        this.write(`Test skipped ${test.currentTest}`)
     }
 
-    onTestEnd() {
+    onTestEnd(test) {
+        this.write(`Test finished ${test.currentTest}`)
     }
 
     onSuiteEnd() {
