@@ -3,7 +3,7 @@ const copyfiles = require('copyfiles')
 const path = require('path')
 
 // TypeScript project root for testing particular typings
-const outDirs = ['sync', 'sync-mocha', 'sync-jasmine', 'webdriverio', 'webdriverio-mocha', 'webdriverio-jasmine']
+const outDirs = ['sync', 'sync-mocha', 'sync-jasmine', 'webdriverio', 'webdriverio-mocha', 'webdriverio-jasmine', 'wdio-reporter']
 
 const packages = {
     'webdriver': 'packages/webdriver',
@@ -20,6 +20,8 @@ const packages = {
 
     '@types/selenium-standalone': 'packages/wdio-selenium-standalone-service/node_modules/@types/selenium-standalone',
     '@wdio/selenium-standalone-service': 'packages/wdio-selenium-standalone-service',
+
+    '@wdio/reporter': 'packages/wdio-reporter'
 }
 
 /**
