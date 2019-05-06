@@ -1,7 +1,7 @@
 /// <reference types="webdriverio"/>
 
 declare class WDIOReporter {
-    constructor(options?: WebdriverIO.Options);
+    constructor(options?: any);
 
     onRunnerStart(runner?: any): void;
     onBeforeCommand(payload?: any): void;
