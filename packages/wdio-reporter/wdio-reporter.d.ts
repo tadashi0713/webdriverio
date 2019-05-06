@@ -1,5 +1,5 @@
-declare namespace WDIOReporter {
-
+declare class WDIOReporter {
+    constructor(options: any);
 }
 
 declare module "@wdio/reporter" {

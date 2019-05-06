@@ -32,6 +32,7 @@
     "ts:webdriverio": "cd tests/typings/webdriverio && tsc",
     "ts:webdriverio-mocha": "cd tests/typings/webdriverio-mocha && tsc",
     "ts:webdriverio-jasmine": "cd tests/typings/webdriverio-jasmine && tsc",
+    "ts:wdio-reporter": "cd tests/typings/wdio-reporter && tsc",
     "version": "node ./scripts/changelog.js && git add CHANGELOG.md && npm run generate:typings",
     "watch": "node ./scripts/watch",
     "watch:pkg": "lerna exec 'npm run compile -- --watch' --scope"

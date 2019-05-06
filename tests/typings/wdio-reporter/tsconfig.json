@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "types": [
-      "webdriverio",
       "@wdio/reporter"
     ]
   }
