@@ -15,6 +15,8 @@ declare class WDIOReporter {
     onTestEnd(test?: any): void;
     onSuiteEnd(suite?: any): void;
     onRunnerEnd(runner?: any): void;
+
+    write(content: string): any;
 }
 
 declare module "@wdio/reporter" {
